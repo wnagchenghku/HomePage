@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/style.css" type="text/css">
+<link rel="stylesheet" href="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery-smoothness-ui.css">
+<link rel="stylesheet" href="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery_002.css">
+<link rel="stylesheet" href="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery.css" type="text/css" media="all">
+
+<title>Application for Postgraduate Housing – CEDARS</title>
+
+
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery_002.js" type="text/javascript"></script>
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery-1.js" type="text/JavaScript"></script>  
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery.js" type="text/javascript"></script>
+
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/jquery-ui.js" type="text/JavaScript"></script>  
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/maxlength.js" type="text/javascript"></script>
+<script language="javascript" src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/include.js" type="text/javascript"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+	function resize() {
+		if (typeof(window.innerWidth)=='number') {
+			w_width = window.innerWidth;
+			w_height = window.innerHeight;
+		} else {
+			w_width = document.documentElement.clientWidth;
+			w_height = document.documentElement.clientHeight;
+		};
+		if (w_width == 0) {
+			w_width = document.body.clientWidth;
+			w_height = document.body.clientHeight;
+		}
+		cal_margin = w_width*22.5/w_height-29;
+		if (cal_margin > 30) {
+			cal_margin = 30;
+		};
+		if (cal_margin < 1) {
+			cal_margin = 1;
+		};
+		document.getElementsByTagName('body')[0].style.marginLeft = cal_margin+'%';
+		document.getElementsByTagName('body')[0].style.marginRight = cal_margin+'%';
+		document.getElementsByTagName('body')[0].style.fontSize = w_width*(100-cal_margin-cal_margin)/1200+'%';
+	}
+	
+
+</script>
+
+
+
+</head>
+<body onload="resize();" onresize="resize();" style="margin-left: 13.49%; margin-right: 13.49%; font-size: 86.5286%;">
+
+<center>
+  <img src="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/CEDARS_banner.gif" alt="Centre of Development and Resources for Students (CEDARS)" name="CEDARS_Logo" id="CEDARS_Logo" width="860" vspace="0" hspace="0" height="45" border="0" align="middle"><br>
+<big>Application for Postgraduate Housing<br>FOR FULL-TIME POSTGRADUATE STUDENTS</big></center>
+
+
+
+<form action="submit.php" enctype="application/x-www-form-urlencoded" method="post" id="FORM">
+	<div class="Section" id="SectionA">
+		<h2>Section A—Personal Particulars</h2>
+		<ol class="Question">
+		
+		
+	
+		
+		
+			<li>
+				<fieldset id="Current_New__">
+					<legend>Current / New: </legend>
+					<label for="Current_New__Current">
+						<input type="hidden" name="Current_New" id="Current_New" value="Current">
+						<span class="Answer">Current</span></label>
+				</fieldset>
+				<fieldset id="Curr_Hall__" class="twolineQ">
+					<legend>
+					<label for="Curr_Hall">(For current residents) Which hall are you currently staying at or have you stayed before?</label>
+					</legend>
+					<input type="hidden" name="Curr_Hall" id="Curr_Hall" value="Lap-Chee College">
+					<span class="Answer">Lap-Chee College</span>
+				</fieldset>
+				<fieldset id="Resi_year__" class="twolineQ">
+					<legend>
+					<label for="Resi_year">(For current residents) Please quote the year(s) of your residence in this hall. (e.g. 2018–2019)</label>
+					</legend>
+					<input type="hidden" name="Resi_year" id="Resi_year" value="2015-2019">
+					<span class="Answer">2015-2019</span>
+				</fieldset>
+			</li>
+			
+				
+			
+			<li>
+				<fieldset id="PG__">
+					<legend>
+					<label for="PG">Academic Programme:</label>
+					</legend>
+					<input type="hidden" name="PG" id="PG" value="RPG">
+					<span class="Answer">
+					
+					
+					Research Postgraduate	
+					, UGC-funded					</span>
+				</fieldset>
+			</li>
+
+					<input type="hidden" name="Financial_support" id="Financial_support" value="UGC-funded">
+					<input type="hidden" name="UGC_Type" id="UGC_Type" value="">
+
+				
+			
+			
+			
+			
+			<li id="Degree_TPG__" style="display: none;">
+				
+				
+				<fieldset id="Faculty__">
+					<legend>
+					<label for="Faculty">Faculty:</label>
+					</legend>
+					<input type="hidden" name="Faculty" id="Faculty" value="Science" disabled="disabled  /&gt;
+					&lt;span class=&quot;Answer&quot;&gt;Science&lt;/span&gt;
+				&lt;/fieldset&gt;
+				&lt;fieldset id=&quot;Degree_TPG__&quot;&gt;
+					&lt;legend&gt;
+					&lt;label for=&quot;Degree_TPG&quot;&gt;Degree Enrolled:&lt;/label&gt;
+					&lt;/legend&gt;
+					&lt;input type=&quot;hidden&quot; name=&quot;Degree_TPG&quot; id=&quot;Degree_TPG&quot; value=&quot;&quot;  disabled=">
+                                         
+                    
+				  <span class="Answer"></span>
+                   				</fieldset>
+				
+			</li>
+			
+
+			
+			<li id="Degree_RPG__">
+				<fieldset id="Faculty__">
+					<legend>
+					<label for="Faculty">Faculty:</label>
+					</legend>
+					
+					
+					<input type="hidden" name="Faculty" id="Faculty" value="Science">
+					
+					
+					
+					<span class="Answer">Science</span>
+				</fieldset>
+				<fieldset id="Degree_RPG__">
+					<legend>
+					<label for="Degree_RPG">Degree Enrolled:</label>
+					</legend>
+					<input type="hidden" name="Degree_RPG" id="Degree_RPG" value="PhD">
+					<span class="Answer">PhD</span>
+				</fieldset>
+			
+				<fieldset id="Supervisor__">
+					<legend>
+					<label for="Supervisor">Supervisor: </label>
+					</legend>
+					<input type="hidden" name="Supervisor" id="Supervisor" value="Heming Cui">
+					<span class="Answer">Heming Cui</span>
+				</fieldset>
+
+
+
+				<fieldset id="Prog_start_date__">
+					<legend>
+					<label for="Prog_start_date">Programme Start Date:</label>
+					</legend>
+					<input type="hidden" name="Prog_start_date" id="Prog_start_date" value="2015-09-01">
+					<span class="Answer">2015-09-01</span>
+				</fieldset>
+					
+
+				<fieldset id="Dept__">
+					<legend>
+					<label for="Dept">Department</label>
+					</legend>
+					
+                                        <span class="Answer">Department of Computer Science</span>
+                                       
+				</fieldset>
+			</li>
+           
+			
+			
+			
+			
+			<li>
+				<fieldset id="Local_Non-local__">
+					<legend>
+					<label for="Local_Non-local">Local / Non-local:</label>
+					</legend>
+					<input type="hidden" name="Local_Non-local" id="Local_Non-local" value="Non-local">
+					<span class="Answer">Non-local</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="UNo__">
+					<legend>
+					<label for="UNo">University Number: (10 digits)</label>
+					</legend>
+					<input type="hidden" name="UNo" id="UNo" value="3030036766">
+					<span class="Answer">3030036766</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Title__">
+					<legend>
+					<label for="Title">Title:</label>
+					</legend>
+					<input type="hidden" name="Title" id="Title" value="Mr">
+					
+											
+						<span class="Answer">Mr</span>
+											
+					
+				</fieldset>
+				<fieldset id="LName__">
+					<legend>
+					<label for="LName">Family (Last) Name:</label>
+					</legend>
+					<input type="hidden" name="LName" id="LName" value="WANG">
+					<span class="Answer">WANG</span>
+				</fieldset>
+				<fieldset id="FName__">
+					<legend>
+					<label for="FName">First Name:</label>
+					</legend>
+					<input type="hidden" name="FName" id="FName" value="CHENG">
+					<span class="Answer">CHENG</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Sex__">
+					<legend>Sex:</legend>
+					<label for="Sex__F">
+						<input type="hidden" name="Sex" id="Sex" value="M">
+						<span class="Answer">M</span></label>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Marital_Status__">
+					<legend>Marital Status:</legend>
+					<input type="hidden" name="Marital_Status" id="Marital_Status" value="Single">
+					
+										<span class="Answer">Single</span>
+									</fieldset>
+			</li>			
+					
+		
+			<li>
+				<fieldset id="Religion__">
+					<legend>
+					<label for="Religion">Religion (Optional):</label>
+					</legend>
+					<input type="hidden" name="Religion" id="Religion" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Nationality__">
+					<legend>
+					<label for="Nationality">Nationality:</label>
+					</legend>
+					<input type="hidden" name="Nationality" id="Nationality" value="Chinese">
+					<span class="Answer">Chinese</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Duration__">
+					<legend>
+					<label for="Duration">Course Duration:</label>
+					</legend>
+					<input type="hidden" name="Duration" id="Duration" value="4">
+					<span class="Answer">4</span> year(s)
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Year_of_Study__">
+					<legend>
+					<label for="Year_of_Study">Current Year of Study:</label>
+					</legend>
+					<input type="hidden" name="Year_of_Study" id="Year_of_Study" value="4">
+					<span class="Answer">4</span>
+				</fieldset>
+			</li>
+
+			<li>
+				<fieldset id="Exp_Completion_Date__">
+					<legend>
+					<label for="Exp_Completion_Date">Registration Date:</label>
+					</legend>
+					<input type="hidden" name="Reg_date" id="Reg_date" value="2015-09-01">
+					<span class="Answer">2015-09-01</span>
+				</fieldset>
+			</li>			
+
+
+			<li>
+				<fieldset id="Exp_Completion_Date__">
+					<legend>
+					<label for="Exp_Completion_Date">Expected Completion Date:</label>
+					</legend>
+					<input type="hidden" name="Exp_Completion_Date" id="Exp_Completion_Date" value="2020-01-21">
+					<span class="Answer">2020-01-21</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Home_address__" class="twolineQ">
+					<legend>
+					<label for="Home_address">Home Address:</label>
+					</legend>
+					<input type="hidden" name="Home_address" id="Home_address" value="1248 Yudai Road, Nanchong City, Sichuan Province, China">
+					<span class="Answer">1248 Yudai Road, Nanchong City, Sichuan Province, China</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Corr_address__" class="twolineQ">
+					<legend>
+					<label for="Corr_address">Correspondence address (if different from above):</label>
+					</legend>
+					<input type="hidden" name="Corr_address" id="Corr_address" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="phone_1__">
+					<legend>
+					<label for="phone_1">Contact phone number 1:</label>
+					</legend>
+					<input type="hidden" name="phone_1" id="phone_1" value="+852 6938 9125">
+					<span class="Answer">+852 6938 9125</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="phone_2__">
+					<legend>
+					<label for="phone_2">Contact phone number 2:</label>
+					</legend>
+					<input type="hidden" name="phone_2" id="phone_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="email1__">
+					<legend>
+					<label for="email11">Email address1:</label>
+					</legend>
+					<input type="hidden" name="email11" id="email11" value="348448708@qq.com">
+					<span class="Answer">348448708@qq.com</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="email2__">
+					<legend>
+					<label for="email21">Email address2:</label>
+					</legend>
+					<input type="hidden" name="email21" id="email21" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+		</ol>
+	</div>
+	<div class="Section" id="SectionB">
+		<h2>Section B—Move-in Details (Your application will not be considered if you fail to complete this section)</h2>
+		<ol class="Question">
+			<li>
+				<fieldset id="Move-in_date__">
+					<legend>Proposed Move-in Date</legend>
+					<label for="Move-in_date">Date:
+						<input type="hidden" name="Move-in_date" id="Move-in_date" value="2019-10-01">
+						<span class="Answer">2019-10-01</span></label>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="Duration_of_Stay__">
+					<legend>
+					<label for="Duration_of_Stay">Proposed Duration of Stay:</label>
+					</legend>
+					<input type="hidden" name="Duration_of_Stay" id="Duration_of_Stay" value="4 months">
+					<span class="Answer">4 months</span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset id="roomType__" style="padding-left:0em">
+				<legend style="margin-left:0em">Type of housing required Type of housing required <br>(Please indicate your priority 1 = top priority; 2 = second priority; and so on (You can choose up to 6)</legend>
+
+	         	<table width="95%">
+
+	         		<thead>
+	         			<tr>
+	         				<th>HALL/COLLEGE</th>
+	         				<th>SINGLE OCCUPANCY</th>
+	         				<th>DOUBLE OCCUPANCY</th>
+	         				<th>FAMILY HOUSING (1)<br>FOR MARRIED COUPLES (2)</th>
+	         			</tr>
+	         		</thead>
+	         		<tbody>
+	         		<tr><td id="19">Ching Lin Terrace Residence (CLT)</td><td style="text-align:left"><input type="hidden" name="CLT_single" id="CLT_single" value=""><font color="#A9A9A9">  CLT - Single Room</font><br><input type="hidden" name="CLT_single_loft" id="CLT_single_loft" value=""><font color="#A9A9A9">  CLT - Single Room (Loft)</font><br><input type="hidden" name="CLT_double_SingleOcc" id="CLT_double_SingleOcc" value=""><font color="#A9A9A9"> CLT- Single Room (with double bed)</font><br><input type="hidden" name="CLT_double_suites_SingleOcc" id="CLT_double_suites_SingleOcc" value=""><font color="#A9A9A9"> CLT - Single Room (with double bed, private toilet &amp; shower)</font><br></td><td style="text-align:left"><input type="hidden" name="CLT_twin" id="CLT_twin" value=""><font color="#A9A9A9">  CLT - Twin Bed Room</font><br></td><td style="text-align:left"><input type="hidden" name="CLT_double" id="CLT_double" value=""><font color="#A9A9A9"> CLT-Double Bed Room</font><br><input type="hidden" name="CLT_double_suites" id="CLT_double_suites" value=""><font color="#A9A9A9">  CLT - Double Bed Room (w/ private toilet &amp; shower)</font><br></td></tr><tr><td id="18">Graduate House (GH)</td><td style="text-align:left"><input type="hidden" name="GH_single" id="GH_single" value=""><font color="#A9A9A9">  GH - Single Room</font><br></td><td style="text-align:left"></td><td style="text-align:left"><input type="hidden" name="GH_double" id="GH_double" value=""><font color="#A9A9A9">  GH - Double Room</font><br></td></tr><tr><td id="8">HKU Residential Colleges (Jockey Club Student Village III)  (JCSVIII)</td><td style="text-align:left"><input type="hidden" name="SHC_single" id="SHC_single" value="2"><strong>[2] JCSVIII: SHC - Single Room</strong><br></td><td style="text-align:left"><input type="hidden" name="SHC_double" id="SHC_double" value=""><font color="#A9A9A9"> JCSVIII: SHC - Double Room</font><br></td><td style="text-align:left"></td></tr><tr><td id="9">HKU Residential Colleges (Jockey Club Student Village III)  (JCSVIII)</td><td style="text-align:left"><input type="hidden" name="CSC_single" id="CSC_single" value=""><font color="#A9A9A9"> JCSVIII: CSC - Single Room</font><br></td><td style="text-align:left"><input type="hidden" name="CSC_double" id="CSC_double" value=""><font color="#A9A9A9"> JCSVIII: CSC - Double Room</font><br></td><td style="text-align:left"></td></tr><tr><td id="10">HKU Residential Colleges (Jockey Club Student Village III)  (JCSVIII)</td><td style="text-align:left"><input type="hidden" name="LCC_single" id="LCC_single" value=""><font color="#A9A9A9"> JCSVIII: LCC - Single Room</font><br></td><td style="text-align:left"><input type="hidden" name="LCC_double" id="LCC_double" value=""><font color="#A9A9A9"> JCSVIII: LCC - Double Room</font><br></td><td style="text-align:left"></td></tr><tr><td id="11">HKU Residential Colleges (Jockey Club Student Village III)  (JCSVIII)</td><td style="text-align:left"><input type="hidden" name="NC_single" id="NC_single" value="3"><strong>[3] JCSVIII: NC - Single Room</strong><br></td><td style="text-align:left"><input type="hidden" name="NC_double" id="NC_double" value="1"><strong>[1] JCSVIII: NC - Double Room</strong><br></td><td style="text-align:left"></td></tr><tr><td id="6">Morrison Hall (MH)</td><td style="text-align:left"></td><td style="text-align:left"><input type="hidden" name="MH_double_shared" id="MH_double_shared" value=""><font color="#A9A9A9">  MH - Double Share Room</font><br></td><td style="text-align:left"></td></tr><tr><td id="17">St John’s College (Wong Chik Ting) (SJC:WCT)</td><td style="text-align:left"><input type="hidden" name="SJC_small" id="SJC_small" value=""><font color="#A9A9A9">  SJC:WCT - Small Room</font><br><input type="hidden" name="SJC_large" id="SJC_large" value=""><font color="#A9A9A9">  SJC:WCT - Large Room</font><br></td><td style="text-align:left"></td><td style="text-align:left"></td></tr><tr><td id="20">Pokfield Road Residences (PRR)</td><td style="text-align:left"><input type="hidden" name="PRR_single" id="PRR_single" value=""><font color="#A9A9A9">  PRR - Single Flat</font><br></td><td style="text-align:left"><input type="hidden" name="PRR_double_triple" id="PRR_double_triple" value=""><font color="#A9A9A9">  PRR - Double / Triple Room</font><br><input type="hidden" name="PRR_2bedroom" id="PRR_2bedroom" value=""><font color="#A9A9A9">  PRR - Two-bedroom Flat (private bedroom)</font><br></td><td style="text-align:left"><input type="hidden" name="PRR_family" id="PRR_family" value=""><font color="#A9A9A9"> PRR - Family Flat</font><br></td></tr>
+	         		</tbody>
+	         	</table>
+
+            		
+            	</fieldset>
+			</li>
+			<li style="padding-top:1em;">In case you cannot get a place in your preferred residence, would you like other residences to consider your application?
+				<fieldset style="padding-left:5px;padding-bottom:1em" ;="">
+					
+						<input type="hidden" name="other_Residences" value="Yes">
+						<span class="Answer">Yes</span>	
+				</fieldset>
+	
+
+			</li>			
+			<li><sup>#</sup>If you would like to apply for residence in a family 
+flat in Pokfield Road Residences / double room (for married couples) in 
+the Graduate House / double room (for married couples) in Ching Lin 
+Terrace Residence), please fill in the following information, and send a
+ photocopy of your marriage certificate to send to the offices of the 
+halls / residences concerned after submitting this application form 
+online.
+				<fieldset id="Name_of_Spouse__">
+					<legend>
+					<label for="Name_of_Spouse">Name of Spouse:</label>
+					</legend>
+					<input type="hidden" name="Name_of_Spouse" id="Name_of_Spouse" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Spouse_Staff_Student__">
+					<legend>HKU Staff/Student?</legend>
+					<input type="hidden" name="Spouse_Staff_Student" id="Spouse_Staff_Student" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Spouse_Dept__">
+					<legend>
+					<label for="Spouse_Dept">Department:</label>
+					</legend>
+					<input type="hidden" name="Spouse_Dept" id="Spouse_Dept" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Spouse_Tel__">
+					<legend>
+					<label for="Spouse_Tel">Contact Phone Number:</label>
+					</legend>
+					<input type="hidden" name="Spouse_Tel" id="Spouse_Tel" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+		</ol>
+	</div>
+	<div class="Section" id="SectionC">
+		<h2>Section C—Other Information (For Graduate House, Morrison Hall and Residential Colleges Only)</h2>
+		<ol class="Question">
+			<li>
+				<h3>Attendance at Tertiary Institutions:</h3>
+				<fieldset id="Past_Institution_1__">
+					<legend>
+					<label for="Past_Institution_1">Name of Institution:</label>
+					</legend>
+					<input type="hidden" name="Past_Institution_1" id="Past_Institution_1" value="Tongji University">
+					<span class="Answer">Tongji University</span>
+				</fieldset>
+				<fieldset id="Past_From_1__">
+					<legend> Period of Attendance </legend>
+					<label for="Past_From_1">From:
+						<input type="hidden" name="Past_From_1" id="Past_From_1" value="Sep 2011">
+						<span class="Answer">Sep 2011</span> </label>
+					<label for="Past_To_1">To:
+						<input type="hidden" name="Past_To_1" id="Past_To_1" value="July 2015">
+						<span class="Answer">July 2015</span> </label>
+				</fieldset>
+				<fieldset id="Past_FT_PT_1__">
+					<legend>Full-time/Part-time</legend>
+					<input type="hidden" name="Past_FT_PT_1" id="Past_FT_PT_1" value="FT">
+					<span class="Answer">FT</span>
+				</fieldset>
+				<fieldset id="Past_Qualification_1__">
+					<legend>
+					<label for="Past_Qualification_1">Qualification Awarded</label>
+					</legend>
+					<input type="hidden" name="Past_Qualification_1" id="Past_Qualification_1" value="B.Eng., Software Engineering">
+					<span class="Answer">B.Eng., Software Engineering</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Past_Institution_2__">
+					<legend>
+					<label for="Past_Institution_2">Name of Institution:</label>
+					</legend>
+					<input type="hidden" name="Past_Institution_2" id="Past_Institution_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_From_2__">
+					<legend> Period of Attendance </legend>
+					<label for="Past_From_2">From:
+						<input type="hidden" name="Past_From_2" id="Past_From_2" value="">
+						<span class="Answer"></span> </label>
+					<label for="Past_To_2">To:
+						<input type="hidden" name="Past_To_2" id="Past_To_2" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Past_FT_PT_2__">
+					<legend>Full-time/Part-time</legend>
+					<input type="hidden" name="Past_FT_PT_2" id="Past_FT_PT_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_Qualification_2__">
+					<legend>
+					<label for="Past_Qualification_2">Qualification Awarded</label>
+					</legend>
+					<input type="hidden" name="Past_Qualification_2" id="Past_Qualification_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Past_Institution_3__">
+					<legend>
+					<label for="Past_Institution_3">Name of Institution:</label>
+					</legend>
+					<input type="hidden" name="Past_Institution_3" id="Past_Institution_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_From_3__">
+					<legend> Period of Attendance </legend>
+					<label for="Past_From_3">From:
+						<input type="hidden" name="Past_From_3" id="Past_From_3" value="">
+						<span class="Answer"></span> </label>
+					<label for="Past_To_3">To:
+						<input type="hidden" name="Past_To_3" id="Past_To_3" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Past_FT_PT_3__">
+					<legend>Full-time/Part-time</legend>
+					<input type="hidden" name="Past_FT_PT_3" id="Past_FT_PT_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_Qualification_3__">
+					<legend>
+					<label for="Past_Qualification_3">Qualification Awarded</label>
+					</legend>
+					<input type="hidden" name="Past_Qualification_3" id="Past_Qualification_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Past_Institution_4__">
+					<legend>
+					<label for="Past_Institution_4">Name of Institution:</label>
+					</legend>
+					<input type="hidden" name="Past_Institution_4" id="Past_Institution_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_From_4__">
+					<legend> Period of Attendance </legend>
+					<label for="Past_From_4">From:
+						<input type="hidden" name="Past_From_4" id="Past_From_4" value="">
+						<span class="Answer"></span> </label>
+					<label for="Past_To_4">To:
+						<input type="hidden" name="Past_To_4" id="Past_To_4" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Past_FT_PT_4__">
+					<legend>Full-time/Part-time</legend>
+					<input type="hidden" name="Past_FT_PT_4" id="Past_FT_PT_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_Qualification_4__">
+					<legend>
+					<label for="Past_Qualification_4">Qualification Awarded</label>
+					</legend>
+					<input type="hidden" name="Past_Qualification_4" id="Past_Qualification_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Past_Institution_5__">
+					<legend>
+					<label for="Past_Institution_5">Name of Institution:</label>
+					</legend>
+					<input type="hidden" name="Past_Institution_5" id="Past_Institution_5" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_From_5__">
+					<legend> Period of Attendance </legend>
+					<label for="Past_From_5">From:
+						<input type="hidden" name="Past_From_5" id="Past_From_5" value="">
+						<span class="Answer"></span> </label>
+					<label for="Past_To_5">To:
+						<input type="hidden" name="Past_To_5" id="Past_To_5" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Past_FT_PT_5__">
+					<legend>Full-time/Part-time</legend>
+					<input type="hidden" name="Past_FT_PT_5" id="Past_FT_PT_5" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Past_Qualification_5__">
+					<legend>
+					<label for="Past_Qualification_5">Qualification Awarded</label>
+					</legend>
+					<input type="hidden" name="Past_Qualification_5" id="Past_Qualification_5" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+			</li>
+			<li>
+				<h3>Academic award / prize / scholarship received:</h3>
+				<fieldset id="Award_Date_1__">
+					<legend>
+					<label for="Award_Date_1">Date of Award</label>
+					</legend>
+					<input type="hidden" name="Award_Date_1" id="Award_Date_1" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Name_1__">
+					<legend>
+					<label for="Award_Name_1">Name of Awards/Prize/Scholarship</label>
+					</legend>
+					<input type="hidden" name="Award_Name_1" id="Award_Name_1" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Institution_1__">
+					<legend>
+					<label for="Award_Institution_1">Awarding Institution</label>
+					</legend>
+					<input type="hidden" name="Award_Institution_1" id="Award_Institution_1" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Award_Date_2__">
+					<legend>
+					<label for="Award_Date_2">Date of Award</label>
+					</legend>
+					<input type="hidden" name="Award_Date_2" id="Award_Date_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Name_2__">
+					<legend>
+					<label for="Award_Name_2">Name of Awards/Prize/Scholarship</label>
+					</legend>
+					<input type="hidden" name="Award_Name_2" id="Award_Name_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Institution_2__">
+					<legend>
+					<label for="Award_Institution_2">Awarding Institution</label>
+					</legend>
+					<input type="hidden" name="Award_Institution_2" id="Award_Institution_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Award_Date_3__">
+					<legend>
+					<label for="Award_Date_3">Date of Award</label>
+					</legend>
+					<input type="hidden" name="Award_Date_3" id="Award_Date_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Name_3__">
+					<legend>
+					<label for="Award_Name_3">Name of Awards/Prize/Scholarship</label>
+					</legend>
+					<input type="hidden" name="Award_Name_3" id="Award_Name_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Institution_3__">
+					<legend>
+					<label for="Award_Institution_3">Awarding Institution</label>
+					</legend>
+					<input type="hidden" name="Award_Institution_3" id="Award_Institution_3" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+				<fieldset id="Award_Date_4__">
+					<legend>
+					<label for="Award_Date_4">Date of Award</label>
+					</legend>
+					<input type="hidden" name="Award_Date_4" id="Award_Date_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Name_4__">
+					<legend>
+					<label for="Award_Name_4">Name of Awards/Prize/Scholarship</label>
+					</legend>
+					<input type="hidden" name="Award_Name_4" id="Award_Name_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Award_Institution_4__">
+					<legend>
+					<label for="Award_Institution_4">Awarding Institution</label>
+					</legend>
+					<input type="hidden" name="Award_Institution_4" id="Award_Institution_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+			</li>
+			<li>
+				<h3>Extracurricular activities and other achievements:</h3>
+				<fieldset id="Activity_From_Date_1__">
+					<legend>Period</legend>
+					<label for="Activity_From_Date_1">From:
+						<input type="hidden" name="Activity_From_Date_1" id="Activity_From_Date_1" value="June 2019">
+						<span class="Answer">June 2019</span> </label>
+					<label for="Activity_To_Date_1">To:
+						<input type="hidden" name="Activity_To_Date_1" id="Activity_To_Date_1" value="Sep 2019">
+						<span class="Answer">Sep 2019</span> </label>
+				</fieldset>
+				<fieldset id="Activity_Position_1__">
+					<legend>
+					<label for="Activity_Position_1">Position</label>
+					</legend>
+					<input type="hidden" name="Activity_Position_1" id="Activity_Position_1" value="Visiting Scientist">
+					<span class="Answer">Visiting Scientist</span>
+				</fieldset>
+				<fieldset id="Activity_Organization_1__">
+					<legend>
+					<label for="Activity_Organization_1">Organization</label>
+					</legend>
+					<input type="hidden" name="Activity_Organization_1" id="Activity_Organization_1" value="Cornell University">
+					<span class="Answer">Cornell University</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Activity_From_Date_2__">
+					<legend>Period</legend>
+					<label for="Activity_From_Date_2">From:
+						<input type="hidden" name="Activity_From_Date_2" id="Activity_From_Date_2" value="June 2018">
+						<span class="Answer">June 2018</span> </label>
+					<label for="Activity_To_Date_2">To:
+						<input type="hidden" name="Activity_To_Date_2" id="Activity_To_Date_2" value="Oct 2018">
+						<span class="Answer">Oct 2018</span> </label>
+				</fieldset>
+				<fieldset id="Activity_Position_2__">
+					<legend>
+					<label for="Activity_Position_2">Position</label>
+					</legend>
+					<input type="hidden" name="Activity_Position_2" id="Activity_Position_2" value="Research Scientist">
+					<span class="Answer">Research Scientist</span>
+				</fieldset>
+				<fieldset id="Activity_Organization_2__">
+					<legend>
+					<label for="Activity_Organization_2">Organization</label>
+					</legend>
+					<input type="hidden" name="Activity_Organization_2" id="Activity_Organization_2" value="NEC Laboratories Europe">
+					<span class="Answer">NEC Laboratories Europe</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Activity_From_Date_3__">
+					<legend>Period</legend>
+					<label for="Activity_From_Date_3">From:
+						<input type="hidden" name="Activity_From_Date_3" id="Activity_From_Date_3" value="Sep 2016">
+						<span class="Answer">Sep 2016</span> </label>
+					<label for="Activity_To_Date_3">To:
+						<input type="hidden" name="Activity_To_Date_3" id="Activity_To_Date_3" value="July 2018">
+						<span class="Answer">July 2018</span> </label>
+				</fieldset>
+				<fieldset id="Activity_Position_3__">
+					<legend>
+					<label for="Activity_Position_3">Position</label>
+					</legend>
+					<input type="hidden" name="Activity_Position_3" id="Activity_Position_3" value="HTD registration team leader">
+					<span class="Answer">HTD registration team leader</span>
+				</fieldset>
+				<fieldset id="Activity_Organization_3__">
+					<legend>
+					<label for="Activity_Organization_3">Organization</label>
+					</legend>
+					<input type="hidden" name="Activity_Organization_3" id="Activity_Organization_3" value="Lap-Chee College">
+					<span class="Answer">Lap-Chee College</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Activity_From_Date_4__">
+					<legend>Period</legend>
+					<label for="Activity_From_Date_4">From:
+						<input type="hidden" name="Activity_From_Date_4" id="Activity_From_Date_4" value="">
+						<span class="Answer"></span> </label>
+					<label for="Activity_To_Date_4">To:
+						<input type="hidden" name="Activity_To_Date_4" id="Activity_To_Date_4" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Activity_Position_4__">
+					<legend>
+					<label for="Activity_Position_4">Position</label>
+					</legend>
+					<input type="hidden" name="Activity_Position_4" id="Activity_Position_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<fieldset id="Activity_Organization_4__">
+					<legend>
+					<label for="Activity_Organization_4">Organization</label>
+					</legend>
+					<input type="hidden" name="Activity_Organization_4" id="Activity_Organization_4" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+			</li>
+			<li>
+				<h3>Major research work undertaken:</h3>
+				<fieldset id="Research_Period_From_1__">
+					<legend> Period </legend>
+					<label for="Research_Period_From_1">From:
+						<input type="hidden" name="Research_Period_From_1" id="Research_Period_From_1" value="2015">
+						<span class="Answer">2015</span> </label>
+					<label for="Research_Period_To_1">To:
+						<input type="hidden" name="Research_Period_To_1" id="Research_Period_To_1" value="2019">
+						<span class="Answer">2019</span> </label>
+				</fieldset>
+				<fieldset id="Research_Field_1__">
+					<legend>
+					<label for="Research_Field_1">Name and nature of research field</label>
+					</legend>
+					<input type="hidden" name="Research_Field_1" id="Research_Field_1" value="High Reliability in Cloud Computing">
+					<span class="Answer">High Reliability in Cloud Computing</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Research_Period_From_2__">
+					<legend> Period </legend>
+					<label for="Research_Period_From_2">From:
+						<input type="hidden" name="Research_Period_From_2" id="Research_Period_From_2" value="">
+						<span class="Answer"></span> </label>
+					<label for="Research_Period_To_2">To:
+						<input type="hidden" name="Research_Period_To_2" id="Research_Period_To_2" value="">
+						<span class="Answer"></span> </label>
+				</fieldset>
+				<fieldset id="Research_Field_2__">
+					<legend>
+					<label for="Research_Field_2">Name and nature of research field</label>
+					</legend>
+					<input type="hidden" name="Research_Field_2" id="Research_Field_2" value="">
+					<span class="Answer"></span>
+				</fieldset>
+				<hr>
+			</li>
+			<li>
+				<fieldset id="Publications__" class="twolineQ">
+					<legend>
+					<label for="Publications">List of Publications:</label>
+					</legend>
+					<input type="hidden" name="Publications" id="Publications" value="Fulva: Efficient Live Migration for In-memory Key-Value Stores with Zero Downtime (IEEE SRDS'19);
+
+PLOVER: Fast, Multi-core Scalable Virtual Machine Fault-tolerance (USENIX NSDI'18);
+
+Effectively Mitigating I/O Inactivity in vCPU Scheduling (USENIX ATC'18);
+
+APUS: Fast and Scalable PAXOS on RDMA (ACM SoCC'17);
+
+A Fast, General Storage Replication Protocol for Active-Active Virtual Machine Fault Tolerance (IEEE ICPADS'17);
+
+TRIPOD: An Efficient, Highly-available Cluster Management System (ACM APSys'16)">
+					<span class="Answer">Fulva: Efficient Live Migration for In-memory Key-Value Stores with Zero Downtime (IEEE SRDS'19);
+
+PLOVER: Fast, Multi-core Scalable Virtual Machine Fault-tolerance (USENIX NSDI'18);
+
+Effectively Mitigating I/O Inactivity in vCPU Scheduling (USENIX ATC'18);
+
+APUS: Fast and Scalable PAXOS on RDMA (ACM SoCC'17);
+
+A Fast, General Storage Replication Protocol for Active-Active Virtual Machine Fault Tolerance (IEEE ICPADS'17);
+
+TRIPOD: An Efficient, Highly-available Cluster Management System (ACM APSys'16)</span>
+				</fieldset>
+			</li>
+			<li>
+				<h3>Referee (Should be people who could comment on your academic / other achievements):</h3>
+				<fieldset id="Reference_Name_1__">
+					<legend>
+					<label for="Reference_Name_1">Name</label>
+					</legend>
+					<input type="hidden" name="Reference_Name_1" id="Reference_Name_1" value="Robbert van Renesse">
+					<span class="Answer">Robbert van Renesse</span>
+				</fieldset>
+				<fieldset id="Reference_Address_1__">
+					<legend>
+					<label for="Reference_Address_1">Address</label>
+					</legend>
+					<input type="hidden" name="Reference_Address_1" id="Reference_Address_1" value="433 Gates Hall, Cornell University">
+					<span class="Answer">433 Gates Hall, Cornell University</span>
+				</fieldset>
+				<fieldset id="Reference_Tel_1__">
+					<legend>
+					<label for="Reference_Tel_1">Tel. No.</label>
+					</legend>
+					<input type="hidden" name="Reference_Tel_1" id="Reference_Tel_1" value="+1 607-255-1021">
+					<span class="Answer">+1 607-255-1021</span>
+				</fieldset>
+				<fieldset id="Reference_Email_1__">
+					<legend>
+					<label for="Reference_Email_1">Email Address</label>
+					</legend>
+					<input type="hidden" name="Reference_Email_1" id="Reference_Email_1" value="rvr@cs.cornell.edu">
+					<span class="Answer">rvr@cs.cornell.edu</span>
+				</fieldset>
+				<hr>
+				<fieldset id="Reference_Name_2__">
+					<legend>
+					<label for="Reference_Name_2">Name</label>
+					</legend>
+					<input type="hidden" name="Reference_Name_2" id="Reference_Name_2" value="Heming Cui">
+					<span class="Answer">Heming Cui</span>
+				</fieldset>
+				<fieldset id="Reference_Address_2__">
+					<legend>
+					<label for="Reference_Address_2">Address</label>
+					</legend>
+					<input type="hidden" name="Reference_Address_2" id="Reference_Address_2" value="Room 421, Chow Yei Ching Buildingm HKU">
+					<span class="Answer">Room 421, Chow Yei Ching Buildingm HKU</span>
+				</fieldset>
+				<fieldset id="Reference_Tel_2__">
+					<legend>
+					<label for="Reference_Tel_2">Tel. No.</label>
+					</legend>
+					<input type="hidden" name="Reference_Tel_2" id="Reference_Tel_2" value="(+852) 2859 2173">
+					<span class="Answer">(+852) 2859 2173</span>
+				</fieldset>
+				<fieldset id="Reference_Email_2__">
+					<legend>
+					<label for="Reference_Email_2">Email Address</label>
+					</legend>
+					<input type="hidden" name="Reference_Email_2" id="Reference_Email_2" value="heming@cs.hku.hk">
+					<span class="Answer">heming@cs.hku.hk</span>
+				</fieldset>
+				<hr>
+			</li>
+			
+			<li>
+				<fieldset class="twolineQ" id="Disabled__">
+					<legend>
+					<label for="Disabled">If you are physically challenged, please state condition and assistance required:</label>
+					</legend>
+					<input type="hidden" name="Disabled" id="Disabled" value="">
+					<span class="Answer"></span>
+				</fieldset>
+			</li>
+			<li>
+				<fieldset class="twolineQ" id="Additional_Information__">
+					<legend>
+					<label for="Additional_Information">Additional Information (e.g. 
+special reasons for applying for residence; your proposed contribution 
+to hall life; other attributes not mentioned above that would be 
+conducive to your hall life, special requests, etc):</label>
+					</legend>
+					<input type="hidden" name="Additional_Information" id="Additional_Information" value="I'm currently a visiting student at Cornell university and will be back to HKU in October 1st to finish my PhD thesis.
+
+Due to my industry internship at NEC Laboratories Europe, my graduation date needs to be delayed for 4 months. Therefore, I'm expected to graduate in Jan 2020.
+
+Many thanks for your consideration!">
+					<span class="Answer">I'm currently a visiting student at Cornell 
+university and will be back to HKU in October 1st to finish my PhD 
+thesis.
+
+Due to my industry internship at NEC Laboratories Europe, my graduation 
+date needs to be delayed for 4 months. Therefore, I'm expected to 
+graduate in Jan 2020.
+
+Many thanks for your consideration!</span>
+				</fieldset>
+			</li>
+		</ol>
+	</div>
+	<div class="Section" id="SectionD">
+		<h2>Section D—Declaration</h2>
+		<p class="Intro" id="Declaration__">
+			<label for="Declaration__Y">
+				<input type="hidden" name="Declaration" id="Declaration__Y" value="Y">
+				<span class="Answer">
+								✔
+								</span> I understand that once submitted, information could not be modified.</label>
+		</p>
+	</div>
+	<button type="submit" id="Submit_Submit" name="Submit" value="Submit" class="noprint" onclick="this.disabled=true; this.value=" please="" wait...';'="">Submit</button>
+</form>
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="Application%20for%20Postgraduate%20Housing%20%E2%80%93%20CEDARS_files/style.html" type="text/css">
+<title>Application for Postgraduate Housing �V CEDARS</title>
+
+
+<div align="right"><small>© 2019 Centre of Development and Resources for Students, The University of Hong Kong. All rights reserved. <a href="http://www.hku.hk/privacy_policy/" target="_blank">Privacy Policy</a></small></div>
+
+</body></html>
